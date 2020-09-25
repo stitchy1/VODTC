@@ -112,7 +112,7 @@ A batchnorm version for each network is also available.
     
 ## Demo
 ![image](./demo/optflow_demo_1.gif)
-![image](./demo/optflow_demo_1.gif)
+![image](./demo/optflow_demo_2.gif)
 
 ## Todo
 - [x] edge processing
