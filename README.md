@@ -111,12 +111,8 @@ A batchnorm version for each network is also available.
     70  toaster       sink        refrigerator   book       clock     vase      scissors    teddy bear  hair drier     toothbrush
     
 ## Demo
-<video">
-    <source src="./demo/optflow_demo_1.mp4" type="video/mp4">
-</video>
-<video>
-    <source src="./demo/optflow_demo_2.mp4" type="video/mp4">
-</video>
+![image](./demo/optflow_demo_1.gif)
+![image](./demo/optflow_demo_1.gif)
 
 ## Todo
 - [x] edge processing
