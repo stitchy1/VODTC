@@ -23,12 +23,12 @@ Currently, the code supports python3.x
 
 ## Installation 
 
-# get source files
+### get source files
     cd Optical-Flow
     tar -xvf networks.tar
     tar -xvf git.tar
 
-# install custom layers
+### install custom layers
     cd Optical-Flow
     bash install.sh
 
@@ -57,16 +57,16 @@ A batchnorm version for each network is also available.
 - width and height of video should be multiple of 64
 
 ## Inference
-# realtime.py for testing optical flow
+### realtime.py for testing optical flow
     python3 realtime.py
 
-# track.py for object detection and tracking
+### track.py for object detection and tracking
     python3 track.py
 
-# track.py for object detection and counting
+### track.py for object detection and counting
     python3 count.py
     
-# Example of counting with flownet2 and yolov3 in demo
+### Example of counting with flownet2 and yolov3 in demo
     nohup python3 count.py >/dev/null 2>&1 & \
     --video_url videos/watone_pp.mp4 \
     --interval 5 --frame_hop 2 \
@@ -79,8 +79,8 @@ A batchnorm version for each network is also available.
     --weights_path weights/yolov3.weights \
     --show_video 0 --gpu 1 --multiprocess 1 --mqtt 0
     
-# in-out direction and counting position can be modified in count.py
-# if not show_video:
+### in-out direction and counting position can be modified in count.py
+### if not show_video:
         count_position_in[0] = 0.6
         count_position_out[0] = 0.6
         count_position_in[2] = 0.5
@@ -89,17 +89,17 @@ A batchnorm version for each network is also available.
         direction_out[0] = 'l'
         direction_in[2] = 'd'
         direction_out[2] = 'u'
-# if show_video:
+### if show_video:
         you can simply draw lines on the screen
         type "i" or "o" as in-line and out-line, then drag the mouse to draw lines
         you can redraw lines multiple times before typing "Enter"
         type "Enter" to finish all lines drawing
         type "Esc" to delete all lines
     
-# modify the rstp stream url in count.py
+### modify the rstp stream url in count.py
     url = 'xxx'
     
-# C0C0 80 classes table
+### C0C0 80 classes table
         0             1           2              3          4         5         6           7           8              9
     0   person        bicycle     car            motorbike  airplane  bus       train       truck       boat           traffic light
     10  fire hydrant  stop sign   parking meter  bench      bird      cat       dog         horse       sheep          cow
